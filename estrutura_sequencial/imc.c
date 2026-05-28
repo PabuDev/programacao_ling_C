@@ -9,7 +9,7 @@ int main(){
     //Entrada de Dados
     printf("Digite o seu peso: ");
     scanf("%f", &pesoUsuario);
-    prinf("Digite a sua altura: ");
+    printf("Digite a sua altura: ");
     scanf("%f", &alturaUsuario);
 
     //Processamento de Dados

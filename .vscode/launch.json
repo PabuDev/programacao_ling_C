@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/Users/sillv/OneDrive/Documentos/GitHub/programacao_ling_C/estrutura_sequencial",
-      "program": "c:/Users/sillv/OneDrive/Documentos/GitHub/programacao_ling_C/estrutura_sequencial/imc.exe",
+      "program": "c:/Users/sillv/OneDrive/Documentos/GitHub/programacao_ling_C/estrutura_sequencial/numInverso.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

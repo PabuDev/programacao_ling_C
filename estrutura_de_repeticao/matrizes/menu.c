@@ -52,7 +52,6 @@ void formas(int forma) {
             formasTabela[i][j] = ' ';
         }
     }
-
     switch (forma) {
         case 1:
             for (int i = 0; i < 10; i++) {

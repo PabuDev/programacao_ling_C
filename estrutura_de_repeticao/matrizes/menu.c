@@ -65,10 +65,9 @@ void formas(int forma) {
             break;
         case 3:
             for (int i = 0; i < 10; i++) {
-                formasTabela[0][i] = '*';
-                formasTabela[9][i] = '*';
-                formasTabela[i][0] = '*';
-                formasTabela[i][9] = '*';
+                for (int j = 9; j >= i; j--) {
+                    formasTabela[9 - i][j] = '*';
+                }
             }
             break;
         case 4:

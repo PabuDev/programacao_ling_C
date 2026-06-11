@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 void formas(int forma);
 void imprimirMatriz(char matriz[10][10], int linhas, int colunas);
@@ -20,15 +21,16 @@ int main() {
         printf("Opcao: ");
         scanf("%d", &forma);
         if(forma == 9){
-            printf("Voce saiu do Programa!!\n\n");
+            printf("Voce saiu do Programa!!\n");
             break;
         }else{
             if (forma < 1 || forma >= 10) {
-            printf("\nOpcao invalida!\n Digite um numero entre 1 e 8.\n\n");
+            printf("\nOpcao invalida!\n Digite um numero entre 1 e 8.\n");
             }
         }
         formas(forma);
-    } while (forma < 1 || forma > 8);
+    } while(true);
+    system("pause");
 
     return 0;
 }
@@ -51,74 +53,6 @@ void formas(int forma) {
         }
     }
 
-    if (forma == 1){
-        for (int i = 0; i < 10; i++) {
-                formasTabela[i][i] = '*';
-        }
-    }else{
-        if (forma == 2){
-            for (int i = 0; i < 10; i++) {
-                formasTabela[i][9 - i] = '*';
-            }
-        }else{
-            if(forma == 3){
-                for (int i = 0; i < 10; i++) {
-                formasTabela[0][i] = '*';
-                formasTabela[9][i] = '*';
-                formasTabela[i][0] = '*';
-                formasTabela[i][9] = '*';
-            }
-            }else{
-                if(forma == 4){
-                    for (int i = 0; i < 10; i++) {
-                        formasTabela[i][i] = '*';
-                        formasTabela[i][9 - i] = '*';
-                    }
-                }else{
-                    if(forma == 5){
-                        for (int i = 0; i < 10; i++) {
-                        for (int j = 0; j <= i; j++) {
-                            formasTabela[i][j] = '*';
-                        }
-                    }
-                    }else{
-                        if(forma == 6){
-                            for (int i = 0; i < 10; i++) {
-                                for (int j = 9; j >= i; j--) {
-                                    formasTabela[i][j] = '*';
-                                }
-                            }
-                        }else{
-                            if(forma == 7){
-                                for (int i = 0; i < 10; i++) {
-                                    for (int j = 0; j <= i; j++) {
-                                        formasTabela[9 - i][j] = '*';
-                                    }
-                                }
-                            }else{
-                                if(forma == 8){
-                                    for (int i = 3; i < 7; i++) {
-                                        for (int j = 3; j < 7; j++) {
-                                            formasTabela[i][j] = '*';
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-
-
-
-
-
-
-
-    /*
     switch (forma) {
         case 1:
             for (int i = 0; i < 10; i++) {
@@ -166,15 +100,15 @@ void formas(int forma) {
             }
             break;
         case 8:
-            for (int i = 3; i < 7; i++) {
-                for (int j = 3; j < 7; j++) {
+            for (int i = 0; i < 10; i++) {
+                for (int j = 0; j < 10; j++) {
                     formasTabela[i][j] = '*';
                 }
             }
+            break;
         default:
             printf("Forma inexistente.\n");
             return;
     }
-*/
     imprimirMatriz(formasTabela, 10, 10);
 }

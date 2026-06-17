@@ -36,7 +36,7 @@ int main(){
         }printf("\n");
     }
 
-    //Processamento
+    //Processamento - Multiplicação
     printf("\n -- MULTIPLICAÇÂO -- ");
     int terceiraMatriz[3][3];
     for(int i = 0; i < 3; i++){
@@ -48,7 +48,7 @@ int main(){
         }
     }
     printf(" \n-- SEGUNDO MATRIZ --\n");
-    //Imprimindo a Terceira Matriz - Resultante
+    //Imprimindo a Terceira Matriz - Resultante da Multiplicação
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
             printf(" %d ", terceiraMatriz[i][j]); 
